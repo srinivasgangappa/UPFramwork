@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">DeltaSuite</th></tr><tr><td><a href="#t0">ChromeTest</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">22,865</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">FirefoxTest</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">22,864</td><td></td><td></td></tr><tr><th>Total</th><th class="num">0</th><th class="num attn">4</th><th class="num">0</th><th class="num">45,729</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">DeltaSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ChromeTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">delta.main.DeltaDriver</td><td><a href="#m0">launchApp</a></td><td rowspan="1">1472982300105</td><td rowspan="1">0</td></tr><tr><th colspan="4">ChromeTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="4">delta.main.DeltaDriver</td><td><a href="#m1">endFrameWork</a></td><td rowspan="1">1472982321789</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">launchApp</a></td><td rowspan="1">1472982321782</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">quitApp</a></td><td rowspan="2">1472982321788</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m4">quitApp</a></td></tr><tr><th colspan="4">ChromeTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">delta.main.DeltaDriver</td><td><a href="#m5">testScenarios</a></td><td rowspan="2">1472982321774</td><td rowspan="2">3</td></tr><tr class="skippedeven"><td><a href="#m6">testScenarios</a></td></tr></tbody><tbody id="t1"><tr><th colspan="4">FirefoxTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">delta.main.DeltaDriver</td><td><a href="#m7">launchApp</a></td><td rowspan="1">1472982300095</td><td rowspan="1">0</td></tr><tr><th colspan="4">FirefoxTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="4">delta.main.DeltaDriver</td><td><a href="#m8">endFrameWork</a></td><td rowspan="1">1472982321788</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m9">launchApp</a></td><td rowspan="1">1472982321779</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m10">quitApp</a></td><td rowspan="2">1472982321785</td><td rowspan="2">0</td></tr><tr class="skippedeven"><td><a href="#m11">quitApp</a></td></tr><tr><th colspan="4">FirefoxTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">delta.main.DeltaDriver</td><td><a href="#m12">testScenarios</a></td><td rowspan="2">1472982321781</td><td rowspan="2">2</td></tr><tr class="skippedeven"><td><a href="#m13">testScenarios</a></td></tr></tbody></table><h2>ChromeTest</h2><h3 id="m0">delta.main.DeltaDriver#launchApp</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[Test: &quot;ChromeTest&quot; verbose:1[parameters:browser=&gt;chrome][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=delta.main.DeltaDriver]  packages:] </td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;CBT-036&apos;, ip: &apos;10.10.4.169&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: driver.version: DeltaDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at delta.main.DeltaDriver.launchApp(DeltaDriver.java:39)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 10.10.4.58:4444 [/10.10.4.58] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 26 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 39 more
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">delta.main.DeltaDriver#endFrameWork</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">delta.main.DeltaDriver#launchApp</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">delta.main.DeltaDriver#quitApp</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">delta.main.DeltaDriver#quitApp</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">delta.main.DeltaDriver#testScenarios</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Scenario1</td><td>yes</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">delta.main.DeltaDriver#testScenarios</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Scenario2</td><td>yes</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>FirefoxTest</h2><h3 id="m7">delta.main.DeltaDriver#launchApp</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[Test: &quot;FirefoxTest&quot; verbose:1[parameters:browser=&gt;firefox][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=delta.main.DeltaDriver]  packages:] </td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 17:00:58&apos;
+System info: host: &apos;CBT-036&apos;, ip: &apos;10.10.4.169&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_73&apos;
+Driver info: driver.version: DeltaDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+	at delta.main.DeltaDriver.launchApp(DeltaDriver.java:39)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 10.10.4.58:4444 [/10.10.4.58] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 26 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 39 more
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m8">delta.main.DeltaDriver#endFrameWork</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m9">delta.main.DeltaDriver#launchApp</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m10">delta.main.DeltaDriver#quitApp</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m11">delta.main.DeltaDriver#quitApp</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m12">delta.main.DeltaDriver#testScenarios</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Scenario2</td><td>yes</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m13">delta.main.DeltaDriver#testScenarios</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Scenario1</td><td>yes</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
